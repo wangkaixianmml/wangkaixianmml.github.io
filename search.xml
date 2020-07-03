@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>mac常用软件</title>
+      <link href="/2020/07/02/mac-soft/"/>
+      <url>/2020/07/02/mac-soft/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Mac常用软件"><a href="#Mac常用软件" class="headerlink" title="Mac常用软件"></a>Mac常用软件</h2><p>###系统软件</p><ul><li><a href="">istate-系统监控软件</a></li><li><a href="">柠檬清理-清理系统卸载软件</a></li><li><a href="">Macs Fan Control-Mac 风扇控制软件</a></li></ul><p>###运维工具</p><ul><li><a href="">Electerm-ssh与sftp工具</a></li><li><a href="">microsoft Remote Desktop-微软官方远程桌面连接工具</a></li><li><a href="">navicate premium-一款能连接常用数据库的软件</a></li><li><a href="">Tunnelblick-好用的openvpn连接工具</a></li><li><a href="">Shadowsockets-SSR工具懂的人会懂</a></li><li><a href="">charles-HTTP抓包分析软件</a></li><li><a href="">VMware Fusion-虚拟机软件</a></li><li><a href="">Teamviewer-远程连接工具</a></li><li><a href="">向日葵-远程连接工具</a></li></ul><p>###开发工具</p><ul><li><a href="">jetbtrains全家桶激活工具</a></li><li><a href="">pycharm-好用的python集成开发环境</a></li><li><a href="">phpstorm-好用的php集成开发环境</a></li><li><a href="">postman-api接口调试工具</a></li><li><a href="">Paw-也是一款接口调试软件，比postman轻量</a></li><li><a href="">Github Desktop-好用的git管理工具</a></li><li><a href="">RP 9-原型图设计软件</a></li></ul><p>###视频工具</p><ul><li><a href="">Final Cut Pro-苹果官方视频编辑软件</a></li><li><a href="">Photoshop-传说中的ps</a></li></ul><p>###效率工具</p><ul><li><a href="">office全家桶</a></li><li><a href="">microsoft to do-好用的计划软件</a></li><li><a href="">网易邮箱大师-好用的邮箱软件</a></li><li><a href="">jietu-腾讯系的一个截图软件</a></li></ul><p>###应用软件</p><ul><li><a href="">lastPass-好用的密码管理工具</a></li><li><a href="">彩虹工具箱-常用的一些小工具的集合</a></li><li><a href="">chorme-谷歌浏览器</a></li><li><a href="">MWeb-好用专业的markdown写作笔记软件</a></li><li><a href="">城通网盘-比百度网盘限速好点的网盘</a></li><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mac </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件 </tag>
+            
+            <tag> mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/07/01/hello-world/"/>
+      <url>/2020/07/01/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
