@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo">
+    <meta name="keywords" content="Hexo部署到Github, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo</title>
+    <title>Hexo部署到Github | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Hexo部署到Github</h1>
                 </div>
             </div>
         </div>
@@ -428,12 +428,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Hexo/" class="post-category">
+                                Hexo
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -442,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-01
+                    2020-07-03
                 </div>
                 
 
@@ -451,7 +464,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1
+                    240
                 </div>
                 
 
@@ -473,31 +486,24 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <html>
-<head>   
-	<meta charset="UTF-8">
-	<title>404</title>
-<meta name="generator" content="Hexo 4.2.1"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
-<body>
-<br><!--
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <title>公益404 | 不如</title>
-</head>
-<body>
-#404 Not found By Bruce
-<h1>404 Page Not Found</h1>
---><br><script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8"></script><br><!--
-公益404介接入地址
-益云公益404 http://yibo.iyiyun.com/Index/web404
-腾讯公益404 http://www.qq.com/404
-失蹤兒童少年資料管理中心404 http://404page.missingkids.org.tw
--->
-<br>
-</body>
-</html>
+                <h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><p>进入github，在上新建一个仓库，仓库名称一定要用<code>用户名.github.io</code>来命名<br><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gge7du3xkpj317i0u0tew.jpg" alt=""></p>
+<p>进入博客根目录，修改<code>_config.yml</code>文件内容如下：</p>
+<pre><code>deploy:
+  type: git
+  repository: https://github.com/wangkaixianmml/wangkaixianmml.github.io.git
+  branch: master
+</code></pre><p>使用命令<code>hexo g</code>生产静态页面</p>
+<p>使用命令<code>hexo d</code>将本地代码上传至github，完成部署</p>
+<p>报错</p>
+<pre><code>(node:12870) Warning: Accessing non-existent property &#39;lineno&#39; of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12870) Warning: Accessing non-existent property &#39;column&#39; of module exports inside circular dependency
+(node:12870) Warning: Accessing non-existent property &#39;filename&#39; of module exports inside circular dependency
+(node:12870) Warning: Accessing non-existent property &#39;lineno&#39; of module exports inside circular dependency
+(node:12870) Warning: Accessing non-existent property &#39;column&#39; of module exports inside circular dependency
+(node:12870) Warning: Accessing non-existent property &#39;filename&#39; of module exports inside circular dependency
+ERROR Deployer not found: git</code></pre><p>解决方法<code>npm install hexo-deployer-git --save</code>即可解决</p>
+<p>这个时候就可以使用<code>用户名.github.io</code>访问你的博客了</p>
 
             </div>
             <hr/>
@@ -523,7 +529,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yunxi922.cn/404.html">http://yunxi922.cn/404.html</a>
+                    <a href="http://yunxi922.cn/2020/07/03/hexo-deploy/">http://yunxi922.cn/2020/07/03/hexo-deploy/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -560,7 +566,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -726,49 +736,52 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/2020/07/04/hexo-bind-domain/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="hexo绑定域名">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">hexo绑定域名</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-   
-	
-	404
+                            绑定步骤获取个人网站域名首先进入阿里云选择一个自己喜欢的域名进行购买Z* 
+域名认证获取到域名后还不能直接进行解析，需要进行以下两个步骤：
 
-
-
-
-
-
-
+进行邮箱验证，就是会向你的邮箱里发送一份验证邮件，进到自己的邮箱里点一下验证连接就好，这一步很简单
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-01
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-07-04
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Wang Kaixian
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hexo/" class="post-category">
+                                    Hexo
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -776,47 +789,59 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/404.html">
+                <a href="/2020/07/02/mac-soft/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="mac常用软件">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">mac常用软件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-   
-	
-	404
+                            Mac常用软件系统软件
+istate-系统监控软件
+柠檬清理-清理系统卸载软件
+Macs Fan Control-Mac 风扇控制软件
 
-
-
-
-
-
-
+运维工具
+Electerm-ssh与sftp工具
+microsoft Remote Desktop-微
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-02
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Wang Kaixian
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Mac/" class="post-category">
+                                    Mac
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6/">
+                        <span class="chip bg-color">软件</span>
+                    </a>
+                    
+                    <a href="/tags/mac/">
+                        <span class="chip bg-color">mac</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

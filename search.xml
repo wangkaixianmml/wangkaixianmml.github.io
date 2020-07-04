@@ -4,11 +4,61 @@
   
     
     <entry>
+      <title>hexo绑定域名</title>
+      <link href="/2020/07/04/hexo-bind-domain/"/>
+      <url>/2020/07/04/hexo-bind-domain/</url>
+      
+        <content type="html"><![CDATA[<h2 id="绑定步骤"><a href="#绑定步骤" class="headerlink" title="绑定步骤"></a>绑定步骤</h2><h3 id="获取个人网站域名"><a href="#获取个人网站域名" class="headerlink" title="获取个人网站域名"></a>获取个人网站域名</h3><p>首先进入<a href="https://dc.console.aliyun.com/next/index?spm=5176.12818093.recommends.ddomain.488716d0VBvr1j#/domain/list/all-domain" target="_blank" rel="noopener">阿里云</a>选择一个自己喜欢的域名进行购买<br>Z* </p><h3 id="域名认证"><a href="#域名认证" class="headerlink" title="域名认证"></a>域名认证</h3><p>获取到域名后还不能直接进行解析，需要进行以下两个步骤：</p><ol><li>进行邮箱验证，就是会向你的邮箱里发送一份验证邮件，进到自己的邮箱里点一下验证连接就好，这一步很简单。</li><li>就是需要实名认证，这一步也就是填一下自己的身份证号和上传一下自己的身份证的照片就好，这里注意的是图片的大小不得超过1M，用手机拍的照片可能就需要处理下了，个人实名认证的速度很快的。<br>域名实名认证完代表着这个域名可以使用了，这时我们进到域名列表，<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gg2aon14bej31h40ik0yk.jpg" alt="可以看到刚才我们买的域名状态已经显示为正常了。"></li></ol><h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>点击解析按钮，进入到域名解析页面，现在里面是空的，没有一条记录，这时我们点击左上角的添加记录，这里最好添加两条记录，<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gg2ag0clsjj310y0qwdhv.jpg" alt="第一条是直接解析到IP地址">这里填的IP地址oing一下部署的github站点就可以得到</p><p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gg2ag3x8alj311c0qe0up.jpg" alt="第二条解析到github的域名上">这里的域名就是你部署的github站点</p><h3 id="绑定完成"><a href="#绑定完成" class="headerlink" title="绑定完成"></a>绑定完成</h3><p>到这里域名的申请-购买-认证-解析就完成了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo部署到Github</title>
+      <link href="/2020/07/03/hexo-deploy/"/>
+      <url>/2020/07/03/hexo-deploy/</url>
+      
+        <content type="html"><![CDATA[<h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><p>进入github，在上新建一个仓库，仓库名称一定要用<code>用户名.github.io</code>来命名<br><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gge7du3xkpj317i0u0tew.jpg" alt=""></p><p>进入博客根目录，修改<code>_config.yml</code>文件内容如下：</p><pre><code>deploy:  type: git  repository: https://github.com/wangkaixianmml/wangkaixianmml.github.io.git  branch: master</code></pre><p>使用命令<code>hexo g</code>生产静态页面</p><p>使用命令<code>hexo d</code>将本地代码上传至github，完成部署</p><p>报错</p><pre><code>(node:12870) Warning: Accessing non-existent property &#39;lineno&#39; of module exports inside circular dependency(Use `node --trace-warnings ...` to show where the warning was created)(node:12870) Warning: Accessing non-existent property &#39;column&#39; of module exports inside circular dependency(node:12870) Warning: Accessing non-existent property &#39;filename&#39; of module exports inside circular dependency(node:12870) Warning: Accessing non-existent property &#39;lineno&#39; of module exports inside circular dependency(node:12870) Warning: Accessing non-existent property &#39;column&#39; of module exports inside circular dependency(node:12870) Warning: Accessing non-existent property &#39;filename&#39; of module exports inside circular dependencyERROR Deployer not found: git</code></pre><p>解决方法<code>npm install hexo-deployer-git --save</code>即可解决</p><p>这个时候就可以使用<code>用户名.github.io</code>访问你的博客了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mac常用软件</title>
       <link href="/2020/07/02/mac-soft/"/>
       <url>/2020/07/02/mac-soft/</url>
       
-        <content type="html"><![CDATA[<h2 id="Mac常用软件"><a href="#Mac常用软件" class="headerlink" title="Mac常用软件"></a>Mac常用软件</h2><p>###系统软件</p><ul><li><a href="">istate-系统监控软件</a></li><li><a href="">柠檬清理-清理系统卸载软件</a></li><li><a href="">Macs Fan Control-Mac 风扇控制软件</a></li></ul><p>###运维工具</p><ul><li><a href="">Electerm-ssh与sftp工具</a></li><li><a href="">microsoft Remote Desktop-微软官方远程桌面连接工具</a></li><li><a href="">navicate premium-一款能连接常用数据库的软件</a></li><li><a href="">Tunnelblick-好用的openvpn连接工具</a></li><li><a href="">Shadowsockets-SSR工具懂的人会懂</a></li><li><a href="">charles-HTTP抓包分析软件</a></li><li><a href="">VMware Fusion-虚拟机软件</a></li><li><a href="">Teamviewer-远程连接工具</a></li><li><a href="">向日葵-远程连接工具</a></li></ul><p>###开发工具</p><ul><li><a href="">jetbtrains全家桶激活工具</a></li><li><a href="">pycharm-好用的python集成开发环境</a></li><li><a href="">phpstorm-好用的php集成开发环境</a></li><li><a href="">postman-api接口调试工具</a></li><li><a href="">Paw-也是一款接口调试软件，比postman轻量</a></li><li><a href="">Github Desktop-好用的git管理工具</a></li><li><a href="">RP 9-原型图设计软件</a></li></ul><p>###视频工具</p><ul><li><a href="">Final Cut Pro-苹果官方视频编辑软件</a></li><li><a href="">Photoshop-传说中的ps</a></li></ul><p>###效率工具</p><ul><li><a href="">office全家桶</a></li><li><a href="">microsoft to do-好用的计划软件</a></li><li><a href="">网易邮箱大师-好用的邮箱软件</a></li><li><a href="">jietu-腾讯系的一个截图软件</a></li></ul><p>###应用软件</p><ul><li><a href="">lastPass-好用的密码管理工具</a></li><li><a href="">彩虹工具箱-常用的一些小工具的集合</a></li><li><a href="">chorme-谷歌浏览器</a></li><li><a href="">MWeb-好用专业的markdown写作笔记软件</a></li><li><a href="">城通网盘-比百度网盘限速好点的网盘</a></li><li></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="Mac常用软件"><a href="#Mac常用软件" class="headerlink" title="Mac常用软件"></a>Mac常用软件</h2><h3 id="系统软件"><a href="#系统软件" class="headerlink" title="系统软件"></a>系统软件</h3><ul><li><a href="">istate-系统监控软件</a></li><li><a href="">柠檬清理-清理系统卸载软件</a></li><li><a href="">Macs Fan Control-Mac 风扇控制软件</a></li></ul><h3 id="运维工具"><a href="#运维工具" class="headerlink" title="运维工具"></a>运维工具</h3><ul><li><a href="">Electerm-ssh与sftp工具</a></li><li><a href="">microsoft Remote Desktop-微软官方远程桌面连接工具</a></li><li><a href="">navicate premium-一款能连接常用数据库的软件</a></li><li><a href="">Tunnelblick-好用的openvpn连接工具</a></li><li><a href="">Shadowsockets-SSR工具懂的人会懂</a></li><li><a href="">charles-HTTP抓包分析软件</a></li><li><a href="">VMware Fusion-虚拟机软件</a></li><li><a href="">Teamviewer-远程连接工具</a></li><li><a href="">向日葵-远程连接工具</a></li></ul><h3 id="开发工具"><a href="#开发工具" class="headerlink" title="开发工具"></a>开发工具</h3><ul><li><a href="">jetbtrains全家桶激活工具</a></li><li><a href="">pycharm-好用的python集成开发环境</a></li><li><a href="">phpstorm-好用的php集成开发环境</a></li><li><a href="">postman-api接口调试工具</a></li><li><a href="">Paw-也是一款接口调试软件，比postman轻量</a></li><li><a href="">Github Desktop-好用的git管理工具</a></li><li><a href="">RP 9-原型图设计软件</a></li></ul><h3 id="视频工具"><a href="#视频工具" class="headerlink" title="视频工具"></a>视频工具</h3><ul><li><a href="">Final Cut Pro-苹果官方视频编辑软件</a></li><li><a href="">Photoshop-传说中的ps</a></li></ul><h3 id="效率工具"><a href="#效率工具" class="headerlink" title="效率工具"></a>效率工具</h3><ul><li><a href="">office全家桶</a></li><li><a href="">microsoft to do-好用的计划软件</a></li><li><a href="">网易邮箱大师-好用的邮箱软件</a></li><li><a href="">jietu-腾讯系的一个截图软件</a></li></ul><h3 id="应用软件"><a href="#应用软件" class="headerlink" title="应用软件"></a>应用软件</h3><ul><li><a href="">lastPass-好用的密码管理工具</a></li><li><a href="">彩虹工具箱-常用的一些小工具的集合</a></li><li><a href="">chorme-谷歌浏览器</a></li><li><a href="">MWeb-好用专业的markdown写作笔记软件</a></li><li><a href="">城通网盘-比百度网盘限速好点的网盘</a></li><li></li></ul>]]></content>
       
       
       <categories>
@@ -38,6 +88,18 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     
